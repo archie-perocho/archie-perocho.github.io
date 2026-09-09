@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Archie Perocho — E-Commerce Customer Support Specialist portfolio.">
+<title>Archie Perocho | E-Commerce Customer Support Specialist</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#fff; --text:#111827; --muted:#667085;
+  --line:#e5e7eb; --accent:#111827; --soft:#f1f3f5; --accent2:#2563eb;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(247,247,245,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;letter-spacing:-.03em}
+.navlinks{display:flex;gap:26px;font-size:14px}
+.navlinks a:hover{color:var(--accent2)}
+.nav-cta{background:var(--accent);color:#fff;padding:9px 15px;border-radius:8px;font-weight:700}
+.hero{padding:105px 0 90px;display:grid;grid-template-columns:1.5fr 1fr;gap:60px;align-items:center}
+.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:700;color:var(--accent2)}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.06em;margin:15px 0 24px}
+.hero p{font-size:19px;color:#4f4f4f;max-width:680px}
+.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:13px 20px;border-radius:9px;border:1px solid var(--accent);font-weight:700;font-size:14px}
+.btn.primary{background:var(--accent);color:white}
+.btn.secondary{background:transparent}.resume-btn{background:#fff;border-color:#111827;color:#111827}.btn.whatsapp{border-color:#16a34a;color:#15803d;background:#fff}
+.availability{display:inline-flex;align-items:center;gap:7px;background:#ecfdf3;color:#15803d;border:1px solid #bbf7d0;padding:7px 11px;border-radius:999px;font-size:12px;font-weight:700;margin-bottom:15px}.dot{width:7px;height:7px;border-radius:50%;background:#16a34a}
+.profile-card{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:18px;box-shadow:0 18px 50px rgba(16,24,40,.07)}
+.profile-card h3{margin-top:0}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+.stat{background:var(--soft);padding:18px;border-radius:12px}
+.stat strong{display:block;font-size:25px}
+.stat span{font-size:12px;color:var(--muted)}
+section{padding:80px 0;border-top:1px solid var(--line)}
+.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}
+h2{font-size:38px;letter-spacing:-.04em;margin:0}
+.section-head p{max-width:500px;color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:25px;transition:transform .2s,box-shadow .2s}.card:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(16,24,40,.07)}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{color:var(--muted);font-size:14px;margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.tag{background:var(--soft);padding:7px 11px;border-radius:999px;font-size:12px}
+.experience{display:grid;grid-template-columns:180px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid var(--line)}
+.date{font-weight:700;font-size:13px;color:var(--muted)}
+.experience h3{margin:0 0 10px;font-size:21px}
+.experience ul{margin:0;padding-left:20px;color:#4d4d4d}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.metric{padding:24px;background:var(--accent);color:white;border-radius:14px}
+.metric strong{font-size:32px;display:block;letter-spacing:-.04em}
+.metric span{font-size:12px;opacity:.75}
+.sample{background:#171717;color:white;border-radius:16px;padding:28px}
+.sample .label{font-size:11px;text-transform:uppercase;letter-spacing:.12em;opacity:.55}
+.sample p{color:#ddd}
+.workflow{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.step{background:#292929;border-radius:8px;padding:9px 12px;font-size:12px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.contact-box{background:var(--card);border:1px solid var(--line);padding:30px;border-radius:16px}
+footer{padding:35px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+@media(max-width:800px){
+ .hero,.contact{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr}
+ .metrics{grid-template-columns:1fr 1fr}
+ .navlinks{display:none}
+ .experience{grid-template-columns:1fr;gap:8px}
+}
+@media(max-width:480px){.metrics{grid-template-columns:1fr}h2{font-size:30px}.hero{padding-top:70px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav">
+    <a class="logo" href="#top">ARCHIE PEROCHO</a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#samples">Samples</a>
+      <a href="#contact">Contact</a><a class="nav-cta" href="mailto:archp938@gmail.com">Hire Me</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <div>
+    <div class="kicker">E-Commerce Customer Support Specialist</div>
+    <h1>Customer support that makes every interaction count.</h1>
+    <p>5+ years of customer service experience across e-commerce, retail, telecommunications, technical support, sales, and appointment setting — with a strong focus on written communication, problem solving, and customer experience.</p>
+    <div class="buttons">
+      <a class="btn primary" href="#contact">Hire Me</a><a class="btn resume-btn" href="resume.pdf" download>Download My Resume</a>
+      <a class="btn secondary" href="#samples">View My Work</a><a class="btn whatsapp" href="https://wa.me/639945995933" target="_blank">WhatsApp Me</a>
+    </div>
+  </div>
+  <aside class="profile-card">
+    <div class="availability"><span class="dot"></span> Available to start ASAP</div><div class="kicker">Quick Profile</div>
+    <h3>Remote Customer Support Professional</h3>
+    <p>Experienced with phone, email, and live chat support, CRM documentation, escalations, troubleshooting, and high-volume customer interactions.</p>
+    <div class="stat-grid">
+      <div class="stat"><strong>5+</strong><span>Years Customer Service</span></div>
+      <div class="stat"><strong>98%</strong><span>Customer Satisfaction</span></div>
+      <div class="stat"><strong>40%</strong><span>Lower Escalations</span></div>
+      <div class="stat"><strong>25%</strong><span>Faster Response Efficiency</span></div>
+    </div>
+  </aside>
+</section>
+
+<section id="about">
+  <div class="section-head">
+    <h2>About Me</h2>
+    <p>I combine customer empathy with structured problem solving to resolve issues accurately, communicate clearly, and protect the customer experience.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Customer-focused</h3><p>I listen first, understand the concern, and provide clear next steps instead of simply giving scripted answers.</p></div>
+    <div class="card"><h3>Detail-oriented</h3><p>I carefully document customer interactions, account information, actions taken, and required follow-ups.</p></div>
+    <div class="card"><h3>Adaptable</h3><p>Comfortable learning new products, processes, CRM systems, help-centre tools, and support workflows.</p></div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="section-head">
+    <h2>What I Can Do</h2>
+    <p>Support capabilities aligned with modern e-commerce and customer experience teams.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Email & Live Chat</h3><p>Clear, professional written responses, multiple conversations, customer enquiries, follow-ups, and complaint handling.</p></div>
+    <div class="card"><h3>E-Commerce Support</h3><p>Order enquiries, account concerns, return/refund-related assistance, payment concerns, and customer issue resolution.</p></div>
+    <div class="card"><h3>Escalation Management</h3><p>Identify website, stock, payment, order, or customer-experience issues and escalate them with accurate documentation.</p></div>
+    <div class="card"><h3>Technical Support</h3><p>Structured troubleshooting, root-cause identification, clear customer guidance, and appropriate escalation.</p></div>
+    <div class="card"><h3>Customer Experience</h3><p>De-escalation, retention-focused communication, accurate information, and professional customer interactions.</p></div>
+    <div class="card"><h3>Remote Support</h3><p>Independent work, time management, consistent processes, CRM updates, and reliable communication across remote teams.</p></div>
+  </div>
+  <div class="tags">
+    <span class="tag">Salesforce</span><span class="tag">GoHighLevel</span><span class="tag">Slack</span>
+    <span class="tag">Microsoft Teams</span><span class="tag">Google Workspace</span><span class="tag">Google Sheets</span><span class="tag">Calendly</span>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Why I Fit E-Commerce Teams</h2>
+    <p>Built around the priorities of retail and online consumer brands.</p>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>Fast, clear written support</h3><p>Confident handling email and live chat while keeping responses professional, accurate, and customer-friendly.</p></div>
+    <div class="card"><h3>Order & customer issue mindset</h3><p>Comfortable investigating customer concerns, identifying the right next step, documenting cases, and escalating when needed.</p></div>
+    <div class="card"><h3>Remote & schedule flexible</h3><p>Ready for assigned Sydney/PHT coverage, including weekends, evenings, and overnight shifts.</p></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-head">
+    <h2>Experience</h2>
+    <p>Selected experience highlighting customer support, chat, retail/e-commerce, technical support, sales, and outbound communication.</p>
+  </div>
+  <div class="experience">
+    <div class="date">NOV 2020 — NOV 2024</div>
+    <div><h3>Customer Service / Technical Support Representative</h3><ul>
+      <li>Resolved billing, account, service, and technical concerns through phone, email, and digital support channels.</li>
+      <li>Diagnosed internet and connectivity issues using structured troubleshooting and accurate documentation.</li>
+      <li>Handled urgent and frustrated customer concerns professionally while providing clear next steps.</li>
+      <li>Maintained a 98% customer satisfaction rating and reduced support escalations by 40%.</li>
+    </ul></div>
+  </div>
+  <div class="experience">
+    <div class="date">NOV 2024 — JAN 2026</div>
+    <div><h3>Chat Support Representative</h3><ul>
+      <li>Managed multiple live-chat conversations while maintaining clear, accurate, and professional written communication.</li>
+      <li>Prioritized urgent enquiries and documented customer issues, actions, resolutions, and escalation details.</li>
+      <li>Improved response efficiency by approximately 25% through organized workflows and effective prioritization.</li>
+    </ul></div>
+  </div>
+  <div class="experience">
+    <div class="date">DEC 2019 — NOV 2020</div>
+    <div><h3>E-Commerce / Sales Representative</h3><ul>
+      <li>Supported retail and e-commerce customers with product, account, and service enquiries.</li>
+      <li>Resolved customer concerns by identifying needs, explaining options, and recommending appropriate solutions.</li>
+      <li>Handled high-volume interactions while maintaining accuracy, professionalism, and service standards.</li>
+    </ul></div>
+  </div>
+  <div class="experience">
+    <div class="date">JAN 2026 — AUG 2026</div>
+    <div><h3>Outbound Representative / Appointment Setter</h3><ul>
+      <li>Conducted outbound calls, qualified prospects, handled objections, and maintained accurate CRM records.</li>
+      <li>Followed up consistently with customers and prospects, demonstrating persistence and attention to detail.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Results</h2>
+    <p>Selected measurable achievements from my customer support experience.</p>
+  </div>
+  <div class="metrics">
+    <div class="metric"><strong>98%</strong><span>Customer satisfaction rating</span></div>
+    <div class="metric"><strong>40%</strong><span>Reduction in support escalations</span></div>
+    <div class="metric"><strong>25%</strong><span>Response efficiency improvement</span></div>
+    <div class="metric"><strong>5+</strong><span>Years customer service experience</span></div>
+  </div>
+</section>
+
+<section id="samples">
+  <div class="section-head">
+    <h2>Sample Work</h2>
+    <p>Examples of how I approach common e-commerce customer support situations.</p>
+  </div>
+  <div class="grid">
+    <div class="sample">
+      <div class="label">Live Chat · Urgent Order</div>
+      <p>“I completely understand how important it is to receive your order in time for your event. I’d be happy to check the current status and review the available delivery information. Please provide your order number so I can look into this and assist you with the next steps.”</p>
+    </div>
+    <div class="sample">
+      <div class="label">Returns · Customer Assistance</div>
+      <p>“Absolutely! I’d be happy to help with your return. I’ll first check your order details and the applicable return requirements, then guide you through the next steps so you know exactly what to do.”</p>
+    </div>
+    <div class="sample">
+      <div class="label">Escalation · Issue Handling</div>
+      <p>For website, stock, payment, or order issues outside my authority, I verify the details, investigate what I can, document the case, escalate it to the appropriate team, and keep the customer informed.</p>
+    </div>
+  </div>
+  <div class="workflow">
+    <span class="step">Verify</span><span class="step">Investigate</span><span class="step">Resolve</span>
+    <span class="step">Document</span><span class="step">Escalate</span><span class="step">Follow Up</span>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head">
+    <h2>Let's Work Together</h2>
+    <p>Available for remote customer support, e-commerce support, chat support, and related customer experience roles.</p>
+  </div>
+  <div class="contact">
+    <div class="contact-box">
+      <div class="kicker">Availability</div>
+      <h3>Flexible & Remote Ready</h3>
+      <p>Open to assigned Sydney/PHT schedules, including weekends, evenings, and overnight coverage.</p>
+      <p><strong>Earliest start:</strong> ASAP</p>
+    </div>
+    <div class="contact-box">
+      <div class="kicker">Contact</div>
+      <h3>Archie Perocho</h3>
+      <p>Davao City, Philippines</p>
+      <p><strong>Email:</strong> <a href="mailto:archp938@gmail.com">archp938@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> +639945995933</p>
+      <div class="buttons">
+        <a class="btn primary" href="mailto:archp938@gmail.com">Email Me</a><a class="btn whatsapp" href="https://wa.me/639945995933" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Archie Perocho · E-Commerce Customer Support Specialist</div>
+</footer>
+</body>
+</html>
